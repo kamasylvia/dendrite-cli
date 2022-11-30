@@ -3,6 +3,7 @@
 Initialize and run dendrive with python scripts.
 
 # Requirements
+
 - git
 - docker
 - docker-compose
@@ -10,17 +11,18 @@ Initialize and run dendrive with python scripts.
 
 # Initilize
 
-## Method 1
-
 ```sh
-python3 sample/__init__.py init --target <target_path>
-```
+# From Azure DevOps
+git clone https://kamasylvia@dev.azure.com/kamasylvia/Kamasylvia/_git/dendrite <local_repo>
 
-## Method 2 - recommanded
+# From GitHub
+git clone
 
-```sh
+cd <local_repo>
 pip3 install .
 ```
+
+then
 
 ```sh
 cd <target_path>
@@ -66,26 +68,10 @@ database:
 
 ```sh
 cd <target_path>
-python3 sample/__init__.py compose up
-```
-
-## Method 2 - recommanded
-
-```sh
-cd <target_path>
 dendrite compose up
 ```
 
 # Stop running
-
-## Method 1
-
-```sh
-cd <target_path>
-python3 sample/__init__.py compose down
-```
-
-## Method 2 - recommanded
 
 ```sh
 cd <target_path>
@@ -94,15 +80,6 @@ dendrite compose down -i
 
 # Remove all images
 
-## Method 1
-
-```sh
-cd <target_path>
-python3 <root>/sample/__init__.py compose down -i
-```
-
-## Method 2 - recommanded
-
 ```sh
 cd <target_path>
 dendrite compose down -i
@@ -110,24 +87,13 @@ dendrite compose down -i
 
 # Remove all containers, images, volumes, and networks
 
-## Method 1
-
-```sh
-cd <target_path>
-python3 <root>/sample/__init__.py compose down -a
-```
-
-## Method 2 - recommanded
-
 ```sh
 cd <target_path>
 dendrite compose down -a
 ```
 
 # Uninstall
-If you installed this package with Method 2
 
-To uninstall
 ```sh
 pip3 uninstall dendrite-cli
 ```
