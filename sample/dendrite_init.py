@@ -6,7 +6,7 @@ from pathlib import Path
 sparse_paths = [
     "dendrite-sample.monolith.yaml",
     "build/docker/docker-compose.monolith.yml",
-    "build/docker/postgres",
+    "build/docker/postgres/",
 ]
 
 generate_key_script = """docker run --rm --entrypoint="" \

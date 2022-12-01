@@ -8,15 +8,21 @@ Initialize and run dendrive with python scripts.
 - docker
 - docker-compose
 - [GitPython](http://gitpython.readthedocs.org/)
+- `./local/bin` in `$PATH`
 
-# Initilize
+# Initialization
 
 ```sh
+# Install requirements
+pip3 install GitPython
+# or
+pip3 install -r requirements.txt
+
 # From Azure DevOps
 git clone https://kamasylvia@dev.azure.com/kamasylvia/Kamasylvia/_git/dendrite <local_repo>
 
 # From GitHub
-git clone
+git clone https://github.com/kamasylvia/dendrite-cli.git
 
 cd <local_repo>
 pip3 install .
@@ -28,7 +34,7 @@ then
 cd <target_path>
 dendrite init
 
-or
+# or
 
 dendrite init --target <target_path>
 ```
