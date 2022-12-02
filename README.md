@@ -2,22 +2,20 @@
 
 Initialize and run dendrive with python scripts.
 
-# Requirements
+# Dependencies
+
+- [GitPython](http://gitpython.readthedocs.org/)
+
+# Prerequisites
 
 - git
 - docker
 - docker-compose
-- [GitPython](http://gitpython.readthedocs.org/)
 - `./local/bin` in `$PATH`
 
 # Initialization
 
 ```sh
-# Install requirements
-pip3 install GitPython
-# or
-pip3 install -r requirements.txt
-
 # From Azure DevOps
 git clone https://kamasylvia@dev.azure.com/kamasylvia/Kamasylvia/_git/dendrite <local_repo>
 
