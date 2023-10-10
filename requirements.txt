@@ -1,4 +1,4 @@
 -i https://pypi.org/simple
 gitdb==4.0.10 ; python_version >= '3.7'
-gitpython==3.1.29
+gitpython==3.1.37
 smmap==5.0.0 ; python_version >= '3.6'
